@@ -53,7 +53,6 @@ const FetchAPI = () => {
   );
 
   if (users.length !== 0) {
-    console.log('GIVE ME TABLE BODY CONTENT');
     if (!isLocationSorted) {
       tableBodyContent = (
         <Fragment>
@@ -105,8 +104,6 @@ const FetchAPI = () => {
       email: email,
       location: `${streetNumber} ${streetName} ${city} ${state} ${country} ${postcode}`,
     };
-
-    console.log(newUser);
 
     return newUser;
   };
