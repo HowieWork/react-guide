@@ -1,21 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;900&display=swap');
+
+/* CSS VARIABLES */
+:root {
+  --primary-color: #eb5e28;
+  --primary-color--rgb: 235, 94, 40;
+  --secondary-color: #0085ff;
+
+  --background-color: #fcf7f1;
+  --font-color: #252422;
+}
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Noto Sans JP', sans-serif;
+  /* font-size: 62.5%; */
 }
 
 body {
-  margin: 0;
-  background-color: #3f3f3f;
-  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  color: var(--font-color);
+
+  background-color: var(--background-color);
 }
 
-th,
-td {
-  border-right: 3px solid mediumaquamarine;
-  border-bottom: 1px solid mediumaquamarine;
+input,
+textarea,
+button {
+  font-family: inherit;
 }

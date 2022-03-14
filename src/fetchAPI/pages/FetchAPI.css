@@ -1,0 +1,7 @@
+thead {
+  background-color: var(--primary-color);
+}
+
+tbody {
+  background-color: rgba(var(--primary-color--rgb), 0.2);
+}
