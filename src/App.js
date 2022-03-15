@@ -26,6 +26,9 @@ function App() {
           <Route path='/fetchAPI' exact>
             <FetchAPI />
           </Route>
+          <Route path='/navigation' exact>
+            <FetchAPI />
+          </Route>
           <Redirect to='/' />
         </Switch>
       </main>

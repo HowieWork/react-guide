@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useState } from 'react';
 
-import './FetchAPI.css';
+import styles from './FetchAPI.module.css';
 
 const FetchAPI = () => {
   // 1. FETCH USERSDATA *FOR GETTING FAMILIAR WITH USERS DATA
@@ -157,8 +157,8 @@ const FetchAPI = () => {
       </div>
       {/* --- DIVIDER --- */}
       <table>
-        <thead>{tableHeadContent}</thead>
-        <tbody>{tableBodyContent}</tbody>
+        <thead className={styles['table__head']}>{tableHeadContent}</thead>
+        <tbody className={styles['table__body']}>{tableBodyContent}</tbody>
       </table>
     </Fragment>
   );
