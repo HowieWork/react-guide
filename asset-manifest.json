@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-guide/static/css/main.fc9660f7.css",
+    "main.js": "/react-guide/static/js/main.03f7176b.js",
+    "index.html": "/react-guide/index.html",
+    "main.fc9660f7.css.map": "/react-guide/static/css/main.fc9660f7.css.map",
+    "main.03f7176b.js.map": "/react-guide/static/js/main.03f7176b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc9660f7.css",
+    "static/js/main.03f7176b.js"
+  ]
+}
