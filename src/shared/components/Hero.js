@@ -9,7 +9,7 @@ const Hero = () => {
         <h3>React Interview</h3>
         <ul>
           <li>
-            <NavLink to='/fetchAPI'>1. Fetch API</NavLink>
+            <NavLink to='/fetchAPI'>Fetch API</NavLink>
           </li>
         </ul>
       </div>
@@ -17,7 +17,7 @@ const Hero = () => {
         <h3>General Components</h3>
         <ul>
           <li>
-            <NavLink to='/navigation'>2. Navigation</NavLink>
+            <NavLink to='/navigation'>Navigation</NavLink>
           </li>
         </ul>
       </div>

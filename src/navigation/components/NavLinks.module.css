@@ -1,0 +1,67 @@
+.nav__links--web {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.nav__links--mobile {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.nav__links li:last-child {
+  position: relative;
+}
+
+.nav__links li:last-child::after {
+  content: '← click / hover me!';
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  position: absolute;
+  top: 20%;
+  right: -250%;
+}
+
+/* LVHA */
+.nav__links a {
+  color: var(--background-color);
+}
+
+.nav__links a:link,
+.nav__links a:visited {
+  text-decoration: none;
+}
+
+.nav__links a:link,
+.nav__links a:visited,
+.nav__links a:hover,
+.nav__links a:active {
+  position: relative;
+}
+
+.nav__links a:link::after,
+.nav__links a:visited:after,
+.nav__links a:hover::after,
+.nav__links a:active::after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  top: 90%;
+  left: 0;
+  background-color: var(--background-color);
+
+  width: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav__links a:hover::after,
+.nav__links a:active::after {
+  width: 100%;
+}

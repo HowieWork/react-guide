@@ -1,4 +1,5 @@
 import { Fragment, useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 import styles from './FetchAPI.module.css';
 
@@ -144,23 +145,34 @@ const FetchAPI = () => {
   }, []);
 
   return (
-    <Fragment>
+    <div>
       {/* TASK DESCRIPTION */}
-      <h2>Fetch API</h2>
-      <div>
-        <p>
-          1. Fetch from provided API, create a table showing list of users, only
-          including name, gender, email, location.
-        </p>
-        <p>2. Add sorting feature to location column *button, ascending</p>
-        <p>*API link: https://randomuser.me/api/?results=10</p>
+      <div className='content-container__task'>
+        <h2>Fetch API</h2>
+        <div>
+          <p>
+            1. Fetch from provided API, create a table showing list of users,
+            only including name, gender, email, location.
+          </p>
+          <p>2. Add sorting feature to location column *button, ascending</p>
+          <p>*API link: https://randomuser.me/api/?results=10</p>
+        </div>
       </div>
+
       {/* --- DIVIDER --- */}
+      <a
+        href='https://t.co/zp4piEZITt'
+        alt='youtube-live-coding-video'
+        target='_blank'
+        rel='noreferrer'
+      >
+        Watch a video how I solve this problem live
+      </a>
       <table>
         <thead className={styles['table__head']}>{tableHeadContent}</thead>
         <tbody className={styles['table__body']}>{tableBodyContent}</tbody>
       </table>
-    </Fragment>
+    </div>
   );
 };
 

@@ -1,0 +1,53 @@
+.navigation {
+  padding: 0 0.8rem;
+  margin-bottom: 0.8rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--primary-color);
+}
+
+.navigation::after {
+  content: '← hover me!';
+  position: absolute;
+  top: 20%;
+  right: -15%;
+}
+
+.navigation__logo {
+  font-size: 2.4rem;
+  color: var(--background-color);
+  font-weight: 700;
+}
+
+.navigation__menu-btn {
+  width: 2.4rem;
+  height: 2.4rem;
+  background: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+
+  position: relative;
+}
+
+.navigation__menu-btn::after {
+  content: '← click me!';
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  position: absolute;
+  top: 20%;
+  right: -360%;
+}
+
+.navigation__menu-btn span {
+  display: block;
+  width: 2.4rem;
+  height: 3px;
+  background: var(--background-color);
+}

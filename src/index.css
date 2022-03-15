@@ -82,3 +82,46 @@ button {
   justify-content: center;
   align-items: center;
 }
+
+/* MAIN BODY */
+.content-container {
+  width: 80%;
+  margin: 1.6rem auto;
+}
+
+.content-container__header {
+  gap: 0.8rem;
+}
+
+.content-container__header h1 {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+
+  position: relative;
+}
+
+.content-container__header h1::after {
+  content: 'web';
+
+  position: absolute;
+  bottom: 5%;
+  right: -15%;
+  z-index: -9;
+  transform: rotate(-15deg);
+
+  font-size: 1.2rem;
+  color: var(--background-color);
+  background-color: var(--primary-color);
+
+  padding: 0 6px;
+}
+
+.content-container__body {
+  margin: 4.8rem auto;
+}
+
+.content-container__task {
+  margin-bottom: 1.2rem;
+}

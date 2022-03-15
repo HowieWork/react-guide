@@ -15,23 +15,25 @@ import Navigation from './navigation/pages/Navigation';
 function App() {
   return (
     <Router>
-      <main>
-        <div className='center-text'>
+      <main className='content-container'>
+        <div className='center-flex-column content-container__header'>
           <h1>React Guide</h1>
           <NavLink to='/'>home</NavLink>
         </div>
-        <Switch>
-          <Route path='/' exact>
-            <Hero />
-          </Route>
-          <Route path='/fetchAPI' exact>
-            <FetchAPI />
-          </Route>
-          <Route path='/navigation' exact>
-            <Navigation />
-          </Route>
-          <Redirect to='/' />
-        </Switch>
+        <div className='content-container__body'>
+          <Switch>
+            <Route path='/' exact>
+              <Hero />
+            </Route>
+            <Route path='/fetchAPI' exact>
+              <FetchAPI />
+            </Route>
+            <Route path='/navigation' exact>
+              <Navigation />
+            </Route>
+            <Redirect to='/' />
+          </Switch>
+        </div>
       </main>
       <Footer />
     </Router>
