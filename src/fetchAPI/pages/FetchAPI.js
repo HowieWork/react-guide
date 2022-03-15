@@ -1,5 +1,4 @@
 import { Fragment, useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
 
 import styles from './FetchAPI.module.css';
 
