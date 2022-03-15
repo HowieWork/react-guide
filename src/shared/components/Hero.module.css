@@ -1,0 +1,17 @@
+.hero {
+  width: 80%;
+  margin: 6.4rem auto;
+
+  gap: 3.2rem;
+}
+
+.hero h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+
+  margin-bottom: 0.8rem;
+}
+
+.hero ul {
+  list-style: none;
+}

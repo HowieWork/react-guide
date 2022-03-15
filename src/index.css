@@ -17,13 +17,13 @@
 }
 
 html {
-  /* font-size: 62.5%; */
+  font-size: 62.5%;
 }
 
 body {
   font-family: 'Nunito', sans-serif;
+  font-size: 1.6rem;
   color: var(--font-color);
-
   background-color: var(--background-color);
 }
 
@@ -31,4 +31,54 @@ input,
 textarea,
 button {
   font-family: inherit;
+}
+
+/* CSS TRANSITIONS */
+.slide-in-left-enter {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.slide-in-left-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.slide-in-left-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide-in-left-exit-active {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* HELPER CLASSES */
+.display-none {
+  display: none;
+}
+
+.opacity-zero {
+  opacity: 0;
+}
+
+/* CENTER */
+.center-text {
+  text-align: center;
+}
+
+.center-flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

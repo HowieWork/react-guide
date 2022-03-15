@@ -3,21 +3,22 @@ import {
   Route,
   Switch,
   Redirect,
-  Link,
+  NavLink,
 } from 'react-router-dom';
 
 import Hero from './shared/components/Hero';
 import Footer from './shared/components/Footer';
 
 import FetchAPI from './fetchAPI/pages/FetchAPI';
+import Navigation from './navigation/pages/Navigation';
 
 function App() {
   return (
     <Router>
       <main>
-        <div>
+        <div className='center-text'>
           <h1>React Guide</h1>
-          <Link to='/'>home</Link>
+          <NavLink to='/'>home</NavLink>
         </div>
         <Switch>
           <Route path='/' exact>
@@ -27,7 +28,7 @@ function App() {
             <FetchAPI />
           </Route>
           <Route path='/navigation' exact>
-            <FetchAPI />
+            <Navigation />
           </Route>
           <Redirect to='/' />
         </Switch>
