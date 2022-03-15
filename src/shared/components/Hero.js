@@ -14,10 +14,19 @@ const Hero = () => {
         </ul>
       </div>
       <div>
-        <h3>General Components</h3>
+        <h3 className={styles['current-status']}>General Components</h3>
         <ul>
           <li>
             <NavLink to='/navigation'>Navigation</NavLink>
+          </li>
+          <li>
+            <div>Custom Buttons</div>
+          </li>
+          <li>
+            <div>Modal</div>
+          </li>
+          <li>
+            <div>Form *custom hook</div>
           </li>
         </ul>
       </div>

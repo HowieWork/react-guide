@@ -1,14 +1,39 @@
 .hero {
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .hero h3 {
   font-size: 1.2rem;
   text-transform: uppercase;
 
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.current-status {
+  position: relative;
+}
+
+.current-status::after {
+  content: 'actively updating';
+
+  position: absolute;
+  bottom: 5%;
+  right: -60%;
+  z-index: -9;
+  transform: rotate(-15deg);
+
+  font-size: 1rem;
+  color: var(--background-color);
+  letter-spacing: 0.1rem;
+  background-color: var(--secondary-color);
+
+  padding: 0 6px;
 }
 
 .hero ul {
   list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }

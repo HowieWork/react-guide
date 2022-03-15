@@ -33,29 +33,6 @@ button {
   font-family: inherit;
 }
 
-/* CSS TRANSITIONS */
-.slide-in-left-enter {
-  transform: translateX(-100%);
-  opacity: 0;
-}
-
-.slide-in-left-enter-active {
-  transform: translateX(0);
-  opacity: 1;
-  transition: all 0.3s ease-in-out;
-}
-
-.slide-in-left-exit {
-  transform: translateX(0);
-  opacity: 1;
-}
-
-.slide-in-left-exit-active {
-  transform: translateX(-100%);
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-}
-
 /* HELPER CLASSES */
 .display-none {
   display: none;
@@ -107,11 +84,11 @@ button {
 
   position: absolute;
   bottom: 5%;
-  right: -15%;
+  right: -20%;
   z-index: -9;
   transform: rotate(-15deg);
 
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: var(--background-color);
   background-color: var(--primary-color);
 
