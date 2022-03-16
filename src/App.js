@@ -14,7 +14,7 @@ import Navigation from './navigation/pages/Navigation';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/react-guide'>
       <main className='content-container'>
         <div className='center-flex-column content-container__header'>
           <h1>React Guide</h1>
