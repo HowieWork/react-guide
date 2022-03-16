@@ -8,6 +8,8 @@
 
   --background-color: #fcf7f1;
   --font-color: #252422;
+
+  --shadow--primary: 0 7px 30px -10px rgba(150, 170, 180, 0.6);
 }
 
 * {

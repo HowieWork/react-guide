@@ -20,7 +20,7 @@ const Hero = () => {
             <NavLink to='/navigation'>Navigation</NavLink>
           </li>
           <li>
-            <div>Custom Buttons</div>
+            <NavLink to='/custom-button'>Custom Button</NavLink>
           </li>
           <li>
             <div>Modal</div>

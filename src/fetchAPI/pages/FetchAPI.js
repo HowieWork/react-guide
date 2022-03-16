@@ -144,7 +144,7 @@ const FetchAPI = () => {
   }, []);
 
   return (
-    <div>
+    <Fragment>
       {/* TASK DESCRIPTION */}
       <div className='content-container__task'>
         <h2>Fetch API</h2>
@@ -171,7 +171,7 @@ const FetchAPI = () => {
         <thead className={styles['table__head']}>{tableHeadContent}</thead>
         <tbody className={styles['table__body']}>{tableBodyContent}</tbody>
       </table>
-    </div>
+    </Fragment>
   );
 };
 

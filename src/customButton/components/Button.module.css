@@ -1,0 +1,53 @@
+.button {
+  display: inline-block;
+
+  font-weight: 500;
+  padding: 0.4rem 1.2rem;
+
+  cursor: pointer;
+  text-decoration: none;
+
+  border-radius: 0.6rem;
+
+  transition: all 0.3s;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+  transform: scale(1.05);
+}
+
+/* BUTTON SIZES */
+.button--small {
+  font-size: 1.2rem;
+}
+
+.button--default {
+  font-size: 1.6rem;
+}
+
+.button--large {
+  font-size: 2rem;
+}
+
+/* BUTTON COLORS */
+.button--primary {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+}
+
+.button--secondary {
+  background: var(--secondary-color);
+  color: var(--background-color);
+  border: none;
+}
+
+.button--danger:hover,
+.button--danger:active,
+.button--danger:focus {
+  color: var(--background-color);
+  background: #f54646;
+  border: none;
+}

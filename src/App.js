@@ -11,6 +11,7 @@ import Footer from './shared/components/Footer';
 
 import FetchAPI from './fetchAPI/pages/FetchAPI';
 import Navigation from './navigation/pages/Navigation';
+import CustomButton from './customButton/pages/CustomButton';
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
             </Route>
             <Route path='/navigation' exact>
               <Navigation />
+            </Route>
+            <Route path='/custom-button' exact>
+              <CustomButton />
             </Route>
             <Redirect to='/' />
           </Switch>

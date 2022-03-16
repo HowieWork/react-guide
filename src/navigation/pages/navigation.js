@@ -1,10 +1,12 @@
+import { Fragment } from 'react';
+
 import MainNavigation from '../components/MainNavigation';
 
 import styles from './Navigation.module.css';
 
 const Navigation = () => {
   return (
-    <div>
+    <Fragment>
       {/* TASK DESCRIPTION */}
       <div className='content-container__task'>
         <h2>Navigation</h2>
@@ -24,7 +26,7 @@ const Navigation = () => {
       <div className={styles['nav-container--mobile']}>
         <MainNavigation isMobile={true} />
       </div>
-    </div>
+    </Fragment>
   );
 };
 
