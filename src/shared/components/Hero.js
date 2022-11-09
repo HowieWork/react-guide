@@ -26,7 +26,7 @@ const Hero = () => {
             <div>Modal</div>
           </li>
           <li>
-            <div>Form *custom hook</div>
+            <NavLink to='/form'>Form *custom hook</NavLink>
           </li>
         </ul>
       </div>

@@ -12,6 +12,7 @@ import Footer from './shared/components/Footer';
 import FetchAPI from './fetchAPI/pages/FetchAPI';
 import Navigation from './navigation/pages/Navigation';
 import CustomButton from './customButton/pages/CustomButton';
+import Form from './form/pages/Form';
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
             </Route>
             <Route path='/custom-button' exact>
               <CustomButton />
+            </Route>
+            <Route path='/form' exact>
+              <Form />
             </Route>
             <Redirect to='/' />
           </Switch>
